@@ -33,6 +33,7 @@ function(err, db) {
 
 app.use(express.static(__dirname + '/public'));
 
+// ROUTES
 app.get('/lobbymoney', function(req, res) {
   res.send(JSON.stringify(lobbyMoney));
 });
