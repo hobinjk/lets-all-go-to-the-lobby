@@ -5,6 +5,8 @@ Lobbying stats
 
 Install client side dependencies:
 
+`$ npm install bower gulp`
+
 `$ bower install`
 
 Inject script tags into `index.html`:
@@ -14,4 +16,5 @@ Inject script tags into `index.html`:
 Run server:
 
 `$ npm install`
+
 `$ node server.js`
