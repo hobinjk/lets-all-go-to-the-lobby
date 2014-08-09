@@ -3,6 +3,15 @@ lets-all-go-to-the-lobby
 
 Lobbying stats
 
-To run:
-`npm install`
-`node server.js`
+Install client side dependencies:
+
+`$ bower install`
+
+Inject script tags into `index.html`:
+
+`$ gulp`
+
+Run server:
+
+`$ npm install`
+`$ node server.js`

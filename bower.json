@@ -1,0 +1,28 @@
+{
+  "name": "lets-all-go-to-the-lobby",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hobinjk/lets-all-go-to-the-lobby",
+  "authors": [
+    "Code For America"
+  ],
+  "description": "san francisco lobby data",
+  "main": "server.js",
+  "keywords": [
+    "lobby",
+    "san",
+    "francisco"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.11",
+    "bootstrap": "~3.2.0"
+  }
+}
