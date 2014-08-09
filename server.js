@@ -1,6 +1,7 @@
 /* jshint node: true */
 
 var express = require('express');
+var cors = require('cors');
 var app = express();
 var MongoClient = require('mongodb').MongoClient;
 
@@ -31,6 +32,7 @@ function(err, db) {
   });
 });
 
+app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/lobbymoney', function(req, res) {
