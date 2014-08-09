@@ -5,7 +5,7 @@ Lobbying stats
 
 Install client side dependencies:
 
-`$ npm install bower gulp`
+`$ npm install bower gulp express cors mongodb`
 
 `$ bower install`
 
