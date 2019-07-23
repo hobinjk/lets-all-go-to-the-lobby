@@ -3,13 +3,12 @@ var gulp = require('gulp'),
 	inject = require("gulp-inject");
 
 // inject bower packages into index.html
-gulp.task('bower-install', function(){
-  gulp.src('./public/index.html')
+function bowerInstall() {
+  return gulp.src('./public/index.html')
   	.pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower'}))
   	.pipe(gulp.dest('./public/'))
-})
+}
 
-// register default tasks
-gulp.task('default', [
-	'bower-install'
-])
+exports.bowerInstall = bowerInstall;
+// register default task
+exports.default = bowerInstall;
